@@ -1,15 +1,15 @@
-.container
-{
-    /* margin: 5%; */
-}
+// .container
+// {
+//     /* margin: 5%; */
+// }
 
-.bgimg
-{
-    background-size: 75px;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-weight: 500;
-}
+// .bgimg
+// {
+//     background-size: 75px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     font-weight: 500;
+// }
 
 a
 {
@@ -28,11 +28,68 @@ a
     margin-top: 10px;
 }
 
-.right
+// .right
+// {
+//   margin-left: auto;
+// }
+
+.toolColor
 {
-  margin-left: auto;
+  background-color: #00802b;
 }
 
-.righter{
-  margin-left: auto;
+.btnDefault
+{
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+
+  //for animation
+  display: inline-block;
+  position: relative;
 }
+
+.btnDefault::before
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btnDefault:hover::before
+{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+//end of animation
+
+.siCSS
+{
+  margin-left: auto;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: transparent;
+  color: white;
+}
+
+.caCSS
+{
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: #00802b;
+}
+
+
+
+// .righter{
+//   margin-left: auto;
+// }
